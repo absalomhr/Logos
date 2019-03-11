@@ -1,4 +1,4 @@
-//INSTRUCCIONES BÃ�SICAS
+//INSTRUCCIONES BASICAS
 Avanzar[100];
 Girar[90];
 CambiarColor[255,0,0];
@@ -56,7 +56,7 @@ for(i=0; i<24; i=i+1){
     Girar[90];
 }
 
-PROCEDIMIENTOS ANIDADOS
+//PROCEDIMIENTOS ANIDADOS
 proc circulo(){
    for(aux=0; aux<360; aux=aux+1){
       CambiarColor[$1,$2,$3];
@@ -71,23 +71,3 @@ proc flor(){
    }
 }
 flor();
-
-ESPIRAL
- Avanzar[2];
- Girar[45];
- Avanzar[2];avanzar 200
-
-dibujar
-
-for( i=1 (i<15) i=i+1) {
-   Avanzar [i*20];
-   CambiarColor[
-      5*potencia(i,1),
-      5*potencia(i,2),
-      5*potencia(i,3)
-   ];
-   Girar [90];
-   Avanzar [i*20];
-   Girar [90];
-}
-
